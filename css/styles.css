@@ -5,7 +5,7 @@
     --secondary-text-color: #ffffff;
     --main-bg-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
-    --time-func:cubic-bezier(0.4, 0, 0.2, 1);
+    --time-func: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -453,7 +453,8 @@ ul {
     fill: #FFFFFF;
 }
 
-.social-list-item .social-link:hover, .social-list-ite .social-link:focus {
+.social-list-item .social-link:hover,
+.social-list-ite .social-link:focus {
     background-color: #2196F3;
 }
 
@@ -507,8 +508,8 @@ ul {
 
 .client-logo {
     transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: var(--time-func);
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func);
     fill: #AFB1B8;
 }
 
@@ -739,15 +740,15 @@ ul {
 
 .footer-social-link {
     display: flex;
-        width: 100%;
-        height: 100%;
-    
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: 300ms;
     transition-timing-function: var(--time-func);
 
 }
@@ -757,7 +758,7 @@ ul {
     background-color: var(--accent-color);
 }
 
-/* modal dtyles */
+/* Modal styles */
 
 .backdrop {
     position: fixed;
@@ -766,22 +767,21 @@ ul {
     left: 0px;
     top: 0px;
     background: rgba(0, 0, 0, 0.2);
-    transition-property: opacity, visibility;
-    transition-duration: 250ms;
-    transition-timing-function: var(--time-func);
-    
+
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition-property: opacity, visibility, transform;
+    transition-duration: 300ms;
+    transition-timing-function: var(--time-func);
 
 }
 
 
 .modal {
-    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -793,15 +793,14 @@ ul {
     background: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform 500ms linear;
+    transition: transform 250ms var(--time-func);
 
 }
 
-.backdrop.is-hidden .modal{
-    transform: scale(0.5);
-    transform: translate(50%, 10%);
-
+.backdrop.is-hidden .modal {
+    transform: scale(1.5) translate(0, 0);
 }
+
 .close-modal {
     display: flex;
     position: absolute;
