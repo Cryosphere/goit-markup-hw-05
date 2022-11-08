@@ -128,12 +128,12 @@ ul {
 }
 
 .link.current {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 .contacts {
     display: flex;
-    margin-left: calc(315 * (100vw / 1520));
+    margin-left: 315px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -741,7 +741,7 @@ ul {
 }
 
 .footer-social-list .social-link {
-    background: rgba(255, 255, 255, 0.1)
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .social-link {
@@ -811,7 +811,6 @@ ul {
 .close-icon {
     display: block;
     --color3: rgba(0, 0, 0, 0.1);
-    ;
     --color2: #000000;
 
 
